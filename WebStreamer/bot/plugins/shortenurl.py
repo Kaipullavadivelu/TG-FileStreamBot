@@ -6,7 +6,7 @@ import base64
 import pyshorteners
 from urllib.parse import quote
 from urllib3 import disable_warnings
-from .vars import SHORTENER, SHORTENER_API
+from WebStreamer import SHORTENER, SHORTENER_API
 
 
 def short_url(longurl):
