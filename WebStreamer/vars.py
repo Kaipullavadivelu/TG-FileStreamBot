@@ -32,8 +32,4 @@ class Var(object):
         URL = "http{}://{}{}/".format('s' if HAS_SSL else '', FQDN, '' if NO_PORT else ':'+ str(PORT))
     SHORTENER = str(getenv('SHORTENER'))
     SHORTENER_API = str(getenv('SHORTENER_API'))
-    if len(SHORTENER) == 0 or len(SHORTENER_API) == 0:
-        raise KeyError
-except KeyError:
-    SHORTENER = None
-    SHORTENER_API = None
+    
