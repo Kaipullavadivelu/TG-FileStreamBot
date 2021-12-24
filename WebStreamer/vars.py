@@ -30,6 +30,4 @@ class Var(object):
         URL = f"https://{FQDN}/"     
     else:
         URL = "http{}://{}{}/".format('s' if HAS_SSL else '', FQDN, '' if NO_PORT else ':'+ str(PORT))
-    SHORTENER = str(getenv('SHORTENER'))
-    SHORTENER_API = str(getenv('SHORTENER_API'))
-    
+  
